@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
-import logo from "../Images/logo.PNG";
+import logo from "../Images/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -83,50 +83,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// import React, { useState } from "react";
-// import { Menu, X, Phone } from "lucide-react";
-// import logo from "../Images/logo.PNG";
-
-// const Header = () => {
-//   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-//   return (
-//     <header className="header">
-//       <div className="container">
-//         <div className="logo">
-//           <img src={logo} alt="OM Packers & Movers" className="logo-img" />
-//         </div>
-
-//         <nav className={`nav ${isMenuOpen ? "nav-open" : ""}`}>
-//           <a href="/">Home</a>
-//           <a href="/about">About</a>
-//           <a href="/services">Services</a>
-//           <a href="/testimonials">Reviews</a>
-//           <a href="/blog">Blog</a>
-//           <a href="/contact">Contact</a>
-//         </nav>
-
-//         <div className="header-cta">
-//           <Phone size={20} />
-//           <span>+91 9770568367</span>
-//           <button
-//             className="btn-primary"
-//             onClick={() => (window.location.href = "/booking")}
-//           >
-//             Get Quote
-//           </button>
-//         </div>
-
-//         <button
-//           className="mobile-menu-btn"
-//           onClick={() => setIsMenuOpen(!isMenuOpen)}
-//         >
-//           {isMenuOpen ? <X /> : <Menu />}
-//         </button>
-//       </div>
-//     </header>
-//   );
-// };
-
-// export default Header;
